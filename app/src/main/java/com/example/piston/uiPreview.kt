@@ -85,11 +85,13 @@ object data {
 }
 
 @Composable
-fun ui_content(image: Int, title: String, body: String, padding: Dp) {
+fun ui_content(image: Int, title: String, body: String) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .absolutePadding(10.dp, 10.dp, 10.dp, padding),
+            .padding(all = 10.dp),
+            .background(color = Color.Blue),
+            .shadow(5.dp),
         shape = RoundedCornerShape(30.dp)
 
     ) {
@@ -137,11 +139,14 @@ fun ui_content(image: Int, title: String, body: String, padding: Dp) {
 }
 
 @Composable
-fun ui_content2(image: Int, title: String, body: String, padding: Dp) {
+fun ui_content2(image: Int, title: String, body: String) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .absolutePadding(10.dp, 10.dp, 10.dp, padding),
+            .padding(all = 10.dp),
+            .shadow(5.dp),
+            .background(color = Color.Blue),
+            
         shape = RoundedCornerShape(30.dp)
 
     ) {
